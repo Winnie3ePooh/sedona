@@ -1,0 +1,762 @@
+body {
+	min-width: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'PT Sans', Arial, sans-serif;
+	font-size: 14px;
+	text-transform: uppercase;
+	background-color: #f2f2f2;
+}
+
+h2 {
+	font-weight: bold;
+	font-size: 21px;
+	line-height: 26px;
+	padding: 0 60px;
+}
+
+p{
+	line-height: 21px;
+}
+
+.clearfix:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+	background: white;
+	box-shadow: 0 0 8px rgba(0,0,0,0.5);
+}
+
+.main-header {
+	padding: 0 0;
+	position: relative;
+	min-height: 56px;
+}
+
+.main-navigation {
+	display: block;
+	max-width: 1200px;
+	min-height: 56px;
+}
+
+.main-menu {
+	width: auto;
+	min-height: 0;
+	margin: 0 auto;
+	padding-left: 0;
+	list-style: none;
+}
+
+.main-menu li {
+	display: inline-block;
+	text-align: center;
+	float: left;
+	width: 239px;
+	padding-top: 19px;
+	padding-bottom: 17px;
+}
+
+.main-menu li:nth-child(2){
+	padding-right: 244px;
+}
+
+.main-menu a {
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+}
+
+.main-menu .active a{
+	color: #9b8d84;
+}
+.main-menu .active a:hover {
+	color: #604e43;
+}
+.main-menu .active a:active {
+	color: #d6d0cc;
+}
+
+.main-menu a:hover {
+	color: #81b3d2;
+}
+.main-menu a:active {
+	color: #b2b2b2;
+}
+
+
+.main-logo {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 138px;
+	height: 70px;
+	margin-left: -69px;
+	background:url("img/form-logo-triangle.svg") no-repeat;
+}
+
+.main-logo img {
+	display:block;
+	margin:0 auto;
+}
+
+.main-intro{
+	width: 1200px;
+	height: 508px;
+}
+
+.main-intro .main-background {
+	width: 100%;
+	height: 100%;
+	background-image: url("img/intro-triangle.svg"),
+				url("img/photo-background@1x.jpg");
+	background-repeat: no-repeat, no-repeat;
+	background-position: bottom, 0% 28%;
+	background-size: auto, cover;
+}
+
+.main-intro .main-text {
+	width: 100%;
+	height: 100%;
+	background: url("img/text-welcome.svg") no-repeat 50% 15%,
+							url("img/text-tothegorgeous.svg") no-repeat 50% 28%,
+							url("img/text-sedona.svg") no-repeat center 50%,
+							url("img/text-becausecanyon.svg") no-repeat 50% 80%;
+	background-size: 188px auto, 256px auto, 460px auto, 294px auto;
+}
+
+.sedona-about {
+	width: 500px;
+	text-align: center;
+	margin: auto;
+	padding-top: 44px;
+	padding-bottom: 44px;
+}
+
+.welcome-title{
+	font-size: 21px;
+	font-weight: bold;
+}
+
+
+.advantages-row, .facts-row {
+	display: block;
+	box-sizing: border-box;
+}
+
+.facts-row-1, .facts-row-2, .facts-row-3{
+	min-height: 256px;
+}
+
+.fact-content {
+	float: left;
+	width: 300px;
+	padding: 0 50px;
+	text-align: center;
+}
+
+.facts-row-1 .fact-content,
+.facts-row-2 .fact-content,
+.facts-row-3 .fact-content{
+	padding-top: 21px;
+	padding-bottom: 60px;
+}
+
+.blue {
+	background: #81b3d2;
+	color: white;
+}
+
+.grey{
+	background: #f2f2f2;
+}
+
+.advantages-row .fact-content {
+	min-height: 201.5px;
+	padding-top: 60px;
+	padding-bottom: 67px;
+}
+
+.facts-houses {
+	float: right;
+	width: 800px;
+	min-height: 256px;
+	background: url("img/photo-city@1x.jpg") no-repeat center;
+	background-size: cover;
+}
+
+.facts-canyon {
+	float: left;
+	min-height: 256px;
+	width: 800px;
+	background: url("img/photo-bridge@1x.jpg") no-repeat center;
+	background-size: cover;
+}
+
+.reservation-row {
+	max-height: 330px;
+	text-align: center;
+}
+.reservation-title {
+	font-size: 30px;
+	font-weight: bold;
+	padding-top: 30px;
+}
+.reservation-row a {
+	display: block;
+	padding-top: 20px;
+	text-decoration: none;
+}
+
+.btn {
+	width: 450px;
+	padding: 20px 0;
+	background: #81b3d2;
+	color: white;
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+
+.btn:hover {
+	background: #669ec0;
+}
+
+.btn:active {
+	background: #5496bd;
+	color: #88b6d1;
+}
+
+.disabled {
+	background: #e5e5e5;
+	pointer-events: none;
+}
+
+.interested h2 {
+	font-size: 30px;
+}
+
+.map {
+	position: relative;
+	padding-bottom: 35%; // This is the aspect ratio
+	height: 0;
+	overflow: hidden;
+}
+.map iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100% !important;
+	height: 100% !important;
+}
+
+.main-footer {
+	padding: 0;
+}
+
+.footer-hashtag {
+	float: left;
+	width: 400px;
+	text-align: center;
+	font-size: 21px;
+	min-height: 27px;
+	padding-top: 46.5px;
+	padding-bottom: 46.5px;
+}
+
+.footer-hashtag a{
+	text-decoration: none;
+	color: black;
+}
+
+.footer-social {
+	float: left;
+	width: 400px;
+	min-height: 50px;
+	padding-top: 35px;
+	margin-left: 130px;
+}
+
+.social-btn {
+	display: inline-block;
+	vertical-align: top;
+	width: 45px;
+	height: 45px;
+	text-decoration: none;
+	font-size: 0;
+	background: url("sprite-icons.png") no-repeat center;
+}
+
+.social-btn-twitter {
+  background-position: -1px -259px;
+}
+.social-btn-twitter:hover {
+  background-position: -1px -309px;
+}
+.social-btn-twitter:active {
+  background-position: -1px -359px;
+}
+
+.social-btn-fb {
+  background-position: -1px -1px;
+}
+.social-btn-fb:hover {
+  background-position: -1px -51px;
+}
+.social-btn-fb:active {
+  background-position: -1px -101px;
+}
+
+.social-btn-youtube {
+  background-position: -1px -409px;
+}
+.social-btn-youtube:hover {
+  background-position: -1px -459px;
+}
+.social-btn-youtube:active {
+  background-position: -1px -509px;
+}
+
+.footer-copyright {
+	float: right;
+	text-align: center;
+	font-size: 14px;
+	padding-top: 36.5px;
+	padding-right: 50px;
+}
+
+.footer-copyright span {
+	margin-right: 10px;
+}
+
+.copyright-btn {
+	display: inline-block;
+	vertical-align: 25px;
+	width: 27px;
+	height: 34.2px;
+	text-decoration: none;
+	font-size: 0;
+	background: url("img/htmlacademy.svg");
+	background-position: 0px 0px;
+}
+
+.copyright-btn:hover {
+	background-position: 0px 69.5px;
+}
+
+.copyright-btn:active {
+	background-position: 0px 35px;
+}
+
+
+@media(max-width: 1200px){
+
+	h2 {
+		padding: 0 0;
+	}
+
+	.container {
+		width: 768px;
+		margin: 0 auto;
+		box-shadow: none;
+	}
+
+	.main-navigation {
+		display: block;
+		max-width: 100%;
+	}
+
+	.main-menu li {
+		width: 153px;
+		padding-top: 19.2px;
+		padding-bottom: 19.2px;
+	}
+
+	.main-menu li:nth-child(2){
+		padding-right: 154px;
+	}
+
+	.main-intro {
+		width:100%;
+		height: 512px;
+	}
+
+	.main-intro .main-background{
+		background-size: auto, contain;
+	}
+
+	.sedona-about {
+		width: 500px;
+		padding-top: 46px;
+		padding-bottom: 46px;
+	}
+
+	.fact-content {
+		width: 165.4px;
+		padding: 0 45.3px;
+		text-align: center;
+	}
+
+	.facts-row-1 .fact-content,
+	.facts-row-2 .fact-content,
+	.facts-row-3 .fact-content{
+		padding-bottom: 38.4px;
+	}
+
+
+	.advantages-row .fact-content {
+		padding-left: 45.3px;
+		padding-right: 45.3px;
+		padding-bottom: 56.8px;
+	}
+
+	.facts-houses, .facts-canyon {
+		width: 512px;
+		height: auto;
+	}
+
+	.reservation-row p{
+		line-height: 24px;
+	}
+
+	.main-footer {
+		width: 768px;
+	}
+
+	.footer-hashtag {
+		width: 256px;
+		padding-top: 46px;
+		padding-bottom: 46px;
+	}
+
+	.footer-social {
+		width: 170px;
+		margin-left: 66.5px;
+		padding-top: 34.6px;
+	}
+
+	.social-btn {
+		width: 50px;
+	}
+}
+
+
+@media(max-width: 480px){
+
+	h2 {
+		font-size: 18px;
+	}
+
+	.container {
+		width: 320px;
+		box-shadow: none;
+	}
+	
+	.main-header::before {
+		width: 24px;
+		height: 23px;
+		content: url("img/icon-menu.svg");
+		position: absolute;
+		right: 19px;
+		bottom: 17px;
+	}
+	
+	.main-menu {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.main-menu li {
+		float: none;
+		margin: 0;
+		padding: 0;
+		width: 320px;
+		min-height: 20px;
+		padding-top: 16px;
+		padding-bottom: 16px;
+		background: #81b3d2;
+		border-bottom: 2px solid #678fa8;
+		border-top: 2px solid #9ac2db;
+		overflow: hidden;
+	}
+
+	.main-menu li:nth-child(1){
+		order: 2;
+	}
+	
+	.main-menu li:nth-child(2){
+		order: 3;
+	}
+	
+	.main-menu li:nth-child(3){
+		order: 1;
+	}
+	
+	.main-menu li:nth-child(4){
+		order: 4;
+	}
+	
+	 .main-menu li:last-of-type{
+		min-height: 22px;
+		background: linear-gradient(
+		#81b3d2 80%,
+		#6c96b0 100%);
+		border-bottom: none;
+		margin-bottom: 56px;
+	}
+	
+	.main-menu li:first-of-type::before{
+		content: url("img/icon-cross.svg");
+		position: absolute;
+		right: 20px;
+		top: 17px;
+	}
+
+	.main-menu a{
+		color: white;
+	}
+	
+	.main-menu li:nth-child(2){
+		padding-right: 0;
+	}
+	
+	.main-logo {
+		top: auto;
+		bottom: -14px;
+		left: 50%;
+	}
+
+	.main-intro {
+		width: 100%;
+		height: 385px;
+	}
+
+	.main-intro .main-background {
+		background-position: bottom, center;
+		background-size: auto, cover;
+	}
+
+	.main-intro .main-text {
+		background-size: 136px auto, 196px auto, 280px auto, 197px auto;
+	}
+
+	.sedona-about {
+		position: relative;
+		width: 280px;
+		text-align: center;
+		padding-top: 12.8px;
+		padding-bottom: 6.4px;
+		padding-left: 6.4px;
+		padding-right: 6.4px;
+	}
+
+	.welcome-title{
+		width: 260px;
+		font-size: 18px;
+		padding-left: 14px;
+	}
+
+	.advantages-row, .facts-row {
+		display: block;
+		box-sizing: border-box;
+	}
+	
+
+	.facts-row-1,.facts-row-2,.facts-row-3 {
+		min-height: 211px;
+	}
+
+	.fact-content {
+		float: none;
+		width: 280px;
+		padding: 0 20px;
+		margin: auto;
+		text-align: center;
+	}
+	
+	.facts-row-1 .fact-content,
+	.facts-row-2 .fact-content,
+	.facts-row-3 .fact-content {
+		padding-top: 25.5px;
+		padding-bottom: 19px;
+	}
+
+	.facts-row-1 .fact-content:nth-child(1){
+		padding-top: 0px;
+		padding-bottom: 25px;
+	}
+	
+	.facts-row-1 .fact-content:nth-child(1) h2{
+		padding-top: 45px;
+	}
+	
+	.sedona-about::after{
+		content: url("img/clip.svg");
+		position: absolute;
+		left: -15px;
+		bottom: -33px;
+	}
+	
+	.advantages-row {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.advantages-row .fact-content {
+		width: 267px;
+		min-height: 80px;
+		text-align: left;
+		padding-top: 5px;
+		padding-bottom: 0px;
+		padding-left: 26.5px;
+		padding-right: 26.5px;
+	}
+	
+	.advantages-row img {
+		float: left;
+		width: 40px;
+		height: 40px;
+		margin-top: 4px;
+	}
+	
+	.advantages-row .fact-content:nth-child(2) {
+		order: 3;
+	}
+	
+	.advantages-row .fact-content:nth-child(3) {
+		order: 2;
+	}
+	
+	.advantages-row .fact-content:nth-child(1) {
+		padding-top: 30px;
+	}
+	
+	.advantages-row .fact-content:nth-child(2) {
+		padding-bottom: 38.5px;
+	}
+	
+	.advantages-row .fact-content h2,.advantages-row .fact-content p {
+		margin-left: 53.3px;
+		margin-bottom: 0;
+	}
+	
+	.facts-row-2 {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	
+	.facts-row-3 .fact-content:nth-child(2) {
+		border: 0;
+		border-bottom: 1px solid #000000;
+		border-top: 1px solid #000000;
+		border-color: #d6d6d6;
+		margin-right: 20px;
+		margin-left: 20px;
+		width: auto;
+	}
+	
+	.facts-row-3 .fact-content {
+		padding-top: 11px;
+		padding-bottom: 11px;
+	}
+
+	.facts-houses, .facts-canyon {
+		float: none;
+	}
+	
+	.facts-houses, .facts-canyon {
+		min-height: 256px;
+		width: 320px;
+	}
+
+	.reservation-row {
+		min-height: 286px;
+		text-align: center;
+	}
+
+	.reservation-title {
+		font-weight: bold;
+		padding-top: 30px;
+		font-size: 21px;
+	}
+	
+	.reservation-row p {
+		padding: 0 16px;
+	}
+	
+	.btn {
+		width: 90%;
+		padding: 20px 0;
+		margin: 0 auto;
+	}
+
+	.map {
+		min-height: 350px;
+		max-width: 480px;
+	}
+
+	.main-footer {
+		width: 320px;
+	}
+
+	.footer-hashtag {
+		width: 320px;
+		padding: 0;
+		margin-top: 38px;
+	}
+
+	.footer-social {
+		width: 150px;
+		min-height: 50px;
+		margin: 0 85px;
+
+	}
+	.social-btn {
+		padding-right: 1.5px;
+		width: 45px;
+		height: 45px;
+	}
+
+	.footer-copyright {
+		padding: 0;
+		margin: 30px 0;
+		margin-right: 30.5%;
+		max-width: 320px;
+	}
+
+}
+
+
+@media(min-width: 768px) and (max-width: 1200px){
+	.container {
+		box-shadow: 0 0 8px rgba(0,0,0,0.5);
+	}
+}
+
+@media(min-width: 320px) and (max-width: 480px){
+	.container {
+		box-shadow: 0 0 8px rgba(0,0,0,0.5);
+	}
+}
+
+@media (min-resolution: 1.5dppx) {
+
+	.main-intro .main-background {
+		background-image: url("img/intro-triangle.svg"),
+								url("img/photo-background@2x.jpg");
+	}
+
+	.facts-houses {
+		background-image: url("img/photo-city@2x.jpg");
+	}
+
+	.facts-canyon {
+		background-image: url("img/photo-bridge@2x.jpg");
+	}
+}
